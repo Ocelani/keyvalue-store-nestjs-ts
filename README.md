@@ -2,8 +2,6 @@
 
 Feito com nestjs: https://docs.nestjs.com/microservices/basics#client
 
-Começamos fazendo no Go, uma linguagem que não dominávamos, mas devido a erros de compilação que não conseguimos contornar, mudamos para o typescript - nestjs, que possui uma interface fácil e interessante para mexer com o gRPC.
-
 ### Project
 
 Desenvolver um Key-Value store in memory utilizando o gRPC.
