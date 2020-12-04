@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package keyvalue;
+
+
+// service KeyValueService{
+//   rpc PutKeyValue(KeyValue) returns (Empty){}
+
+//   rpc GetValueWithKey(Key) returns (Value){}
+
+//   rpc GetAllKeys(Empty) returns (All){}
+
+// }
+
+// message KeyValue{
+//   Key key = 1;
+//   Value value = 2;
+// }
+
+// message Key{
+//   string k = 1;
+// }
+
+
+// message Value{
+//   string v = 1;
+// }
+
+// message All{
+//   repeated Key keys = 1;
+// }
+
+// message Empty {}
+
+service KeyValueService {
+  rpc FindOne (KeyValue) returns (KeyValue);
+  rpc FindMany (stream KeyValue) returns (stream KeyValue);
+  rpc createOne (CreateKeyValue) returns (KeyValue);
+}
+
+message CreateKeyValue {
+  string name = 1;
+  string value = 2;
+}
+
+message KeyValue {
+  int32 id = 1;
+  string name = 2;
+  string value = 3;
+}
