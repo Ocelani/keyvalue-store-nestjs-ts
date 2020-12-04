@@ -1,4 +1,4 @@
-# kv-store com gRPC
+# KeyValueStore com gRPC
 
 Feito com nestjs: https://docs.nestjs.com/microservices/basics#client
 
